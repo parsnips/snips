@@ -33,7 +33,7 @@ func main() {
 	for _, file := range files {
 		//Pretty good chance it's a markdown file
 		if file.IsDir() == false && s.HasSuffix(s.ToLower(file.Name()), ".md") {
-			dat, err := ioutil.ReadFile(file.Name())
+			dat, err := ioutil.ReadFile(fmt.Sprintf("%s/%s", *inputPtr, file.Name()))
 			check(err)
 
 			//Go forth and render
