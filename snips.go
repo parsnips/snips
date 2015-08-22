@@ -88,7 +88,7 @@ func WriteHtml(markdown []byte, filePath string) {
 }
 
 func WriteHeader(file *os.File) {
-	_, err := file.WriteString(`<html><head><meta charset="utf-8"><link href="https://dl.dropboxusercontent.com/u/8554242/temp/github-flavored-markdown.css" media="all" rel="stylesheet" type="text/css" /><link href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.css" media="all" rel="stylesheet" type="text/css" /></head><body><article class="markdown-body entry-content" style="padding: 30px;">`)
+	_, err := file.WriteString(`<html><head><meta charset="utf-8"><link href="https://dl.dropboxusercontent.com/s/eyc6lw8fsvvpmrs/github-flavored-markdown.css" media="all" rel="stylesheet" type="text/css" /><link href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.1.2/octicons.css" media="all" rel="stylesheet" type="text/css" /></head><body><article class="markdown-body entry-content" style="padding: 30px;">`)
 	check(err)
 }
 
